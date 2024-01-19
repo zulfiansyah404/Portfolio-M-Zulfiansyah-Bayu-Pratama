@@ -83,30 +83,6 @@ body {
     
 }
 
-.profile-settings .dropdown-toggle {
-    background: #105474;
-    margin-left: 10px;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-
-.profile-settings {
-    /* display: none; */
-    /* Buat center secara vertikal tanpa position*/
-    display: flex;
-    align-items: center;
-    /* Buat center secara horizontal tanpa position*/
-    justify-content: center;
-}
-
-.profile-settings .profile-name {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 0px;
-    padding: 0 0 0 0px;
-}
-
 .alert {
     /* Buat ke tengah secara horizontal*/
     position: fixed;
@@ -154,6 +130,12 @@ body {
     font-size: 40px;
     padding: 0;
 }
+
+.circles-header rounded-circle {
+    width: 50px;
+    height: 50px;
+}
+
 
 .role {
     font-family: 'Glacial Indifference', sans-serif;
