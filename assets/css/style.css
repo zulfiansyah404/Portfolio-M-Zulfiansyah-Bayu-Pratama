@@ -1,0 +1,431 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+body {
+    background: #2c3138;  
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 12px;
+    /* min-height: 700px; */
+}
+
+.league-gothic {
+    font-family: 'League Gothic', sans-serif;
+}
+
+.glacial-indifference {
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+.navbar {
+    background: #1F2227;   
+    padding: 15px 0;
+    width: 100%;
+    /* border-bottom: 1px solid #2c3138; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container-fluid {
+    padding: 0px;
+    margin: 0 87px;
+}
+
+.navbar-nav {
+    margin-left: 0px;
+}
+
+.hidden-photo {
+    display: none;
+}
+
+.hidden-photo img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.nav-item a, .login-register {
+    font-size: 13.5px;
+    color: #D9D9D9;
+}
+
+.nav-item a:hover {
+    color: #fff;
+}
+
+
+.nav-item {
+    padding: 0px 12px;
+}
+
+.login {
+    border-right: 1px solid #3f454f;
+    padding-right: 12px;
+}
+/* 
+.login, .register {
+    padding: 0px 5px;
+} */
+
+.navbar .btn, .jumbotron .btn {
+    background: #FE4E30;
+    color: #D9D9D9;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+}
+
+.navbar .btn:hover, .jumbotron .btn:hover {
+    background: #c03b24;
+    color: #D9D9D9;
+    
+}
+
+.profile-settings .dropdown-toggle {
+    background: #105474;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.profile-settings {
+    /* display: none; */
+    /* Buat center secara vertikal tanpa position*/
+    display: flex;
+    align-items: center;
+    /* Buat center secara horizontal tanpa position*/
+    justify-content: center;
+}
+
+.profile-settings .profile-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding: 0 0 0 0px;
+}
+
+.alert {
+    /* Buat ke tengah secara horizontal*/
+    position: fixed;
+    top: 105px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 3;
+    /* padding: 10px; */
+    border-radius: 40px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.alert strong {
+    /* Buat center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.container-fluid .jumbotron {
+    background: #1F2227;
+    /* background: #c03b24; */
+    height: 100vh;
+    /* position: relative; */
+    padding: 0 87px;
+    
+}
+
+
+.jumbotron-content {
+    width: 600px;
+    /* buat ke tengah secara vertikal */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 40px;
+    padding: 0;
+}
+
+.role {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+}
+
+.typed-text {
+    overflow: hidden;
+    height: 28px;
+    line-height: 24px;
+    /* border: 1px solid #969696; */
+    position: relative;
+    top: 5.5px;
+    padding: 0px
+}
+
+
+.typed-text li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(2) infinite;
+    margin-left: 0.5rem;
+    margin-bottom: 10px;
+}
+
+@keyframes slide {
+    100% {
+        top: -68px;
+    }
+}
+
+.typed-text li span {
+    position: relative;
+    margin: 5px 0;
+}
+
+.contact-me {
+    margin-left: 20px;
+}
+
+.typed-text li span::after {
+    content: '|';
+    position: absolute;
+    left: 0;
+    height: 28px;
+    width: 100%;
+    background: #1F2227;
+    animation: typing 3s steps(24) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    } 
+
+    100% {
+        left: 0;
+    }
+    
+}
+
+.about-me {
+    border-left: 3.5px solid #FFBD59;
+
+    font-size: 17px;
+    padding: 0 0 0 20px;
+    color: #D9D9D9;
+}
+
+.jumbotron-btn {
+    display: flex;
+}
+
+.jumbotron-btn button{
+    color: #D9D9D9;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 40px;
+    width: 120px;
+}
+
+.jumbotron-sosmed {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    /* width: 100px; */
+}
+
+.sosmed i {
+    font-size: 20px;
+    color: #D9D9D9;
+}
+
+.jumbotron-img img{
+    width: 650px;
+    height: calc(100vh - 10vh);
+}
+
+.project{
+    width: 450px;
+    overflow: hidden;
+}
+
+.project .card-header {
+    height: 30px;
+}
+
+.project img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project .card-title {
+    height: 97px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.project .card-text {
+    text-align: justify;
+}
+
+.project .card-text {
+    height: 150px;
+    overflow: hidden;
+}
+
+.card-button .btn{
+    width: 75px;
+    color:#c1c1c1;
+}
+
+#card-title {
+    color: rgb(233, 233, 255);
+}
+
+#card-title:hover {
+    color: rgb(130, 130, 148)
+}
+
+.card-button .btn-warning {
+    background: #e04327;
+    border: none;
+}
+
+.card-button .btn-warning:hover {
+    background: #b1341e;
+    border: none;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #131518;  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+@media only screen and (max-width: 1219px) {
+    .navbar .container-fluid {
+        margin: 0 40px;
+    }
+
+    .container-fluid .jumbotron {
+        padding: 0 40px;
+    }
+
+    .jumbotron-img img{
+        width: calc(100vh - 40vh);
+        height: calc(100vh - 15vh);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .jumbotron-img img {
+        display: none;
+    }
+
+    .hidden-photo {
+        display: block;
+        padding-top: 100px;
+        
+    }
+
+    .container-fluid .jumbotron {
+        height: auto;
+    }
+
+    .jumbotron-content {
+        position: static;
+        top: none;
+        transform: none;
+    }
+
+    .jumbotron-sosmed {
+        margin-top: 50px;
+        position: static;
+    }
+
+    .jumbotron-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container-fluid .jumbotron {
+        padding: 0 20px;
+    }
+    
+    .jumbotron-content {
+        width: 90%;
+    }
+
+    .role {
+        display: block;
+    }
+
+    .typed-text li span {
+        margin: 0;
+    }
+
+    /* .name {
+        font-size: 30px;
+    }
+
+    .role {
+        font-size:20px;
+    }
+
+    .about-me {
+        font-size: 12px;
+    }
+
+    .jumbotron-btn .btn {
+        font-size: 12px;
+        width: 110px;
+    } */
+
+    
+}
+
+@media only screen and (max-width: 470px) {
+    .project{
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .project .card-title {
+        height: 100%;
+        overflow: none;
+        text-align: justify;
+    }
+    
+
+}

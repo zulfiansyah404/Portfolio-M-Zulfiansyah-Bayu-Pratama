@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 16 | Register</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-form.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-auth.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed z-2" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="assets/#">
+                <img src="assets/img/logo.png" alt="Bootstrap" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add-project">Add Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Me</a>
+                    </li>
+                    
+
+                </ul>
+                
+                <!-- Buat login dan register -->
+                <div class="ms-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item login">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item register">
+                            <a class="nav-link" href="/register">Register</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown profile-settings">
+                            <span class="profile-picture">
+                                <img src="assets/img/profile.webp" class="rounded-circle" alt="profile" width="30px">
+                            </span>
+                            <a class="nav-link dropdown-toggle ps-3 pe-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="profile-name">
+                                    zulfiansyah404
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/profile/">My Profile</a></li>
+                              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </li> -->
+    
+                    </ul>
+                    
+                </div>
+
+                 
+
+                
+            </div>
+        </div>
+    </nav>
+
+    {{if .Message}}
+        {{if .Status}}
+            <div class="alert alert-success alert-dismissible fade show bg-success text-white border-0" role="alert">
+                <strong>{{.Message}}</strong>
+                <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {{else}}
+            <div class="alert alert-danger alert-dismissible fade show bg-danger text-white border-0" role="alert">
+                <strong>{{.Message}}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {{end}}
+    {{end}}
+
+    <!-- Form -->
+    <div class="form-container container-fluid">
+        
+
+        <div class="form ms-auto me-auto mt-5">
+            <div class="form-header position-relative">
+                <div class="circles-header d-flex flex-row-reverse">
+                    <div class="rounded-circle bg-danger ms-1" style="height: 12px; width: 12px;"></div>
+                    <div class="rounded-circle bg-warning ms-1" style="height: 12px; width: 12px;"></div>
+                    <div class="rounded-circle bg-success ms-1" style="height: 12px; width: 12px;"></div>
+                </div>
+            </div>
+            <div class="form-body ">
+                <h3 class="fw-bolder">
+                   Register Your Account
+                </h3>
+                <form action="/register" method="POST">
+                    <div class="form-item mb-3">
+                        <label for="name" class="form-label glacial-indifference">Name : </label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-item mb-3">
+                        <label for="email" class="form-label glacial-indifference">Email : </label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-item mb-3">
+                        <label for="user" class="form-label glacial-indifference">Username : </label>
+                        <input type="text" name="user" id="user" class="form-control" required>
+                    </div>
+                    <div class="form-item mb-3">
+                        <label for="password" class="form-label glacial-indifference">Password : </label>
+                        <input type="password" name="pass" id="pass" class="form-control" required>
+                    </div>
+                    
+                    <button type="submit" class="btn">Login</button>
+
+
+                </form>
+                  
+            </div>
+
+            
+        </div>
+
+        
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

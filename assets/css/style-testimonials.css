@@ -1,0 +1,203 @@
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article h1 {
+    text-align: center;
+}
+
+.article hr {
+    width: 400px;
+    margin: 5px auto 20px;  
+}
+
+.content {
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+.testimonial {
+    background: #2c3138;
+    margin: 10px 20px 10px;
+    width: 400px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.logo-test {
+    width: 50px;
+    background: #fb4c33;
+    height: 50px;
+    border-radius: 50%;
+    margin: -10px -15px;
+    position: absolute;
+}
+
+
+
+.content-test {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px ;
+}
+
+.comment {
+    margin: 10px 0px 10px;
+    height: 70px;
+    overflow: auto;
+}
+
+.comment::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content-test p {
+    
+    font-size: medium;
+}
+
+.content-test h2 {
+    font-size: large;
+    text-align: end;
+}
+
+.testimonial img {
+    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.logo-test i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rating-testimonials {
+    height: 60px;
+    background: none;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 510px;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
+}
+
+.rating-testimonials h2 {
+    font-size: large;
+}
+
+.btn-stars {
+    margin: 0px 0 0 12px;
+}
+
+.btn-stars button {
+    margin: 0px 4px;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    height: 28px;
+    width: 45px;
+}
+
+.btn-stars button i {
+    color: gold;
+    margin-right: 2px;
+}
+
+.rating {
+    margin-top: 15px;
+    color: gold;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        width: 1080px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .container {
+        width: 100%;
+    }
+    
+}
+
+.btn-stars select {
+    display: none;
+    margin: 0px 4px;
+    cursor: pointer;
+    padding: 5px;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    height: 28px;
+    width: 70px;
+} 
+
+@media only screen and (max-width: 635px) {
+    .rating-testimonials {
+        width: 400px;
+        border-radius: 0%;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .rating-testimonials h2 {
+        margin-bottom: 5px;
+    }
+
+    .btn-stars {
+        margin: 5px 0 0;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    .rating-testimonials {
+        width: 86%;
+    }
+    
+    .content-test img {
+        height: 200px;
+    }
+
+    .btn-star-collapse {
+        display: none;
+    }
+
+    .btn-stars select {
+        display: block;
+    }
+
+    .article hr {
+        width: 90%;
+    }
+
+    .article{
+        margin: 20px 0;
+    }
+
+    .content-test {
+        padding-bottom: 0;
+    }
+
+}
